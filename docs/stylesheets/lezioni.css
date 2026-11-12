@@ -1,0 +1,66 @@
+/* Colori degli interlocutori: lo stesso colore in tutti gli incontri */
+.s-paolo { --bg: #dce9f7; --ac: #3a78c2; }
+[data-md-color-scheme="slate"] .s-paolo { --bg: #1f3550; }
+.s-lorenzo { --bg: #fce5d4; --ac: #d5793a; }
+[data-md-color-scheme="slate"] .s-lorenzo { --bg: #4a3020; }
+.s-pubblico { --bg: #ebebeb; --ac: #8a8a8a; }
+[data-md-color-scheme="slate"] .s-pubblico { --bg: #3a3a3a; }
+.s-daniele-artigiano { --bg: #e3f1da; --ac: #5a9a46; }
+[data-md-color-scheme="slate"] .s-daniele-artigiano { --bg: #26402a; }
+.s-daniele-corsini { --bg: #fff3c9; --ac: #c9a227; }
+[data-md-color-scheme="slate"] .s-daniele-corsini { --bg: #463d1c; }
+.s-francesco-bosio { --bg: #e6dff0; --ac: #7f62a8; }
+[data-md-color-scheme="slate"] .s-francesco-bosio { --bg: #3a2f4a; }
+.s-ugo-biggeri { --bg: #d9f2ef; --ac: #2f9c8f; }
+[data-md-color-scheme="slate"] .s-ugo-biggeri { --bg: #1d3f3b; }
+.s-federica-paoletti { --bg: #fbe3ef; --ac: #c45589; }
+[data-md-color-scheme="slate"] .s-federica-paoletti { --bg: #4a2537; }
+.s-simone-londi { --bg: #f1ecda; --ac: #a08a4a; }
+[data-md-color-scheme="slate"] .s-simone-londi { --bg: #403a26; }
+.s-mario-mancini { --bg: #e9f5d0; --ac: #82a63a; }
+[data-md-color-scheme="slate"] .s-mario-mancini { --bg: #33401e; }
+.s-silva-cioni { --bg: #dee3fa; --ac: #5b6fd0; }
+[data-md-color-scheme="slate"] .s-silva-cioni { --bg: #262e4f; }
+.s-rossana { --bg: #f9e0dd; --ac: #c4564a; }
+[data-md-color-scheme="slate"] .s-rossana { --bg: #4a2622; }
+
+.md-typeset .turno { background: var(--bg); border-left: 4px solid var(--ac); border-radius: 0 6px 6px 0;
+  padding: .2rem 1rem .2rem 1.1rem; margin: 1rem 0; }
+.md-typeset .turno > p:first-child { margin-top: .6rem; }
+.md-typeset .chi { display: inline-block; font-weight: 700; color: var(--ac); margin-right: .35em;
+  font-size: .78em; letter-spacing: .04em; text-transform: uppercase; }
+[data-md-color-scheme="slate"] .md-typeset .chi { filter: brightness(1.35); }
+.md-typeset .tc { font-family: var(--md-code-font-family); font-size: .68rem; color: var(--md-default-fg-color--light);
+  background: var(--md-default-bg-color); border: 1px solid var(--md-default-fg-color--lightest); border-radius: 3px; padding: 0 .35em; }
+.md-typeset .riquadro { background: var(--md-default-bg-color); border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 6px; padding: .2rem 1rem; margin: 1rem 0; font-size: .92em; box-shadow: 0 1px 2px rgba(0,0,0,.05); }
+.md-typeset .nota { font-style: italic; color: var(--md-default-fg-color--light); }
+.md-typeset .didascalia { font-size: .85em; font-style: italic; color: var(--md-default-fg-color--light); }
+.md-typeset img { display: block; margin: 1rem auto; border-radius: 4px; max-width: 100%; height: auto; }
+.md-typeset .sottotitolo { font-size: 1.15em; font-style: italic; color: var(--md-default-fg-color--light); margin-top: -.6rem; }
+.md-typeset .scheda { border: 1px solid var(--md-default-fg-color--lightest); border-radius: 6px; padding: .1rem 1rem; margin-bottom: 1.5rem; }
+.md-typeset .leg { display: inline-block; background: var(--bg); border-left: 3px solid var(--ac); padding: 0 .5em;
+  border-radius: 0 3px 3px 0; font-size: .85em; margin: .1em .15em; white-space: nowrap; }
+.md-typeset h2 .leg { font-size: .9em; }
+/* Home */
+.md-typeset .hero { text-align: center; padding: 1.5rem 0 1rem; }
+.md-typeset .hero h1 { margin-bottom: .4rem; font-weight: 700; color: var(--md-default-fg-color); }
+.md-typeset .hero-sub { font-size: 1.1em; max-width: 38rem; margin: 0 auto 1.2rem; color: var(--md-default-fg-color--light); }
+.md-typeset .numeri { display: flex; flex-wrap: wrap; justify-content: center; gap: .8rem 2.2rem; margin: 1rem 0 1.4rem; }
+.md-typeset .numeri div { display: flex; flex-direction: column; align-items: center; }
+.md-typeset .numeri strong { font-size: 1.6em; line-height: 1.2; color: var(--md-primary-fg-color); }
+[data-md-color-scheme="slate"] .md-typeset .numeri strong { color: var(--md-accent-fg-color); }
+.md-typeset .numeri span { font-size: .8em; color: var(--md-default-fg-color--light); }
+.md-typeset .card-sub { font-size: .85em; color: var(--md-default-fg-color--light); }
+.md-typeset .card-meta { font-size: .8em; color: var(--md-default-fg-color--light); }
+/* Indici */
+.md-typeset .filtro-indice { width: 100%; padding: .5rem .7rem; font-size: .85rem; border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 4px; background: var(--md-default-bg-color); color: var(--md-default-fg-color); }
+.md-typeset .lettere a { display: inline-block; min-width: 1.6em; text-align: center; }
+.md-typeset ul.indice { list-style: none; margin-left: 0; padding-left: 0; }
+.md-typeset ul.indice li { margin: .25rem 0; padding: .15rem 0; border-bottom: 1px dotted var(--md-default-fg-color--lightest); }
+.md-typeset ul.indice .voce { font-weight: 600; margin-right: .4em; }
+.md-typeset ul.indice .rif { font-size: .9em; }
+.md-typeset small.anno { color: var(--md-default-fg-color--light); }
+.md-typeset .colonne ul { columns: 2; column-gap: 2rem; }
+@media (max-width: 600px) { .md-typeset .colonne ul { columns: 1; } .md-typeset .turno { padding: .1rem .7rem; } }

@@ -1,0 +1,103 @@
+site_name: Lezioni di Montelupo
+site_description: Trascrizioni degli incontri di Paolo Marcucci e Lorenzo Poggi a Montelupo Fiorentino
+site_url: https://paolomarcucci.github.io/Lezioni_Montelupo/
+repo_url: https://github.com/PaoloMarcucci/Lezioni_Montelupo
+repo_name: PaoloMarcucci/Lezioni_Montelupo
+copyright: Trascrizioni degli incontri di Montelupo Fiorentino · le immagini appartengono ai rispettivi autori
+
+theme:
+  name: material
+  language: it
+  font:
+    text: Source Sans 3
+    code: JetBrains Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: brown
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Tema scuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: brown
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Tema chiaro
+  icon:
+    logo: material/book-open-page-variant
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.suggest
+    - toc.follow
+
+nav:
+  - Home: index.md
+  - Incontri:
+      - Tutti gli incontri: incontri/index.md
+      - '2012':
+          - 'Il genio': incontri/2012-04-26-il-genio/index.md
+          - 'La follia': incontri/2012-05-31-la-follia/index.md
+          - 'Il cibo': incontri/2012-11-15-il-cibo/index.md
+          - 'La profezia della fine': incontri/2012-12-13-la-profezia-della-fine/index.md
+      - '2013':
+          - 'L’Occidente': incontri/2013-01-31-l-occidente/index.md
+          - 'Debito e colpa': incontri/2013-02-28-debito-e-colpa/index.md
+          - 'Emozioni e passioni': incontri/2013-03-28-emozioni-e-passioni/index.md
+          - 'Il gioco degli scacchi': incontri/2013-04-23-il-gioco-degli-scacchi/index.md
+          - 'Santi in paradiso': incontri/2013-05-30-santi-in-paradiso/index.md
+      - '2014':
+          - 'Poveri buoni e poveri cattivi': incontri/2014-01-30-poveri-buoni-e-poveri-cattivi/index.md
+          - 'Cooperazione e denaro': incontri/2014-02-27-cooperazione-e-denaro/index.md
+          - 'Il potere e l’impero digitale': incontri/2014-03-27-il-potere-e-l-impero-digitale/index.md
+          - 'L’istruzione, il lavoro, la scuola': incontri/2014-04-17-l-istruzione-il-lavoro-la-scuola/index.md
+          - 'Il pensiero': incontri/2014-05-29-il-pensiero/index.md
+          - 'Le immagini del potere, il potere delle immagini': incontri/2014-12-18-le-immagini-del-potere-il-potere-delle-immagini/index.md
+      - '2015':
+          - 'Buoni e cattivi': incontri/2015-01-29-buoni-e-cattivi/index.md
+          - 'Il diavolo': incontri/2015-02-26-il-diavolo/index.md
+          - 'Visita al Museo Novecento di Firenze': incontri/2015-03-14-visita-al-museo-novecento-di-firenze/index.md
+          - 'C’è ancora posto per l’utopia e per la rivoluzione?': incontri/2015-03-26-c-e-ancora-posto-per-l-utopia-e-per-la-rivoluzione/index.md
+          - 'Che cos’è la pop art?': incontri/2015-04-23-che-cos-e-la-pop-art/index.md
+          - 'Tra arte e filosofia': incontri/2015-05-28-tra-arte-e-filosofia/index.md
+      - '2026':
+          - 'Capitalismo e territori': incontri/2026-05-12-capitalismo-e-territori/index.md
+  - Indici:
+      - Panoramica: indici/index.md
+      - Concetti chiave: indici/concetti.md
+      - Autori e personaggi: indici/autori.md
+      - Luoghi: indici/luoghi.md
+  - Relatori e ospiti: relatori.md
+  - Informazioni: informazioni.md
+
+plugins:
+  - search:
+      lang: it
+  - glightbox:
+      zoomable: true
+      draggable: false
+      skip_classes:
+        - no-lightbox
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - tables
+  - admonition
+  - toc:
+      permalink: false
+
+extra_css:
+  - stylesheets/lezioni.css
+extra_javascript:
+  - javascripts/indici.js
+
+validation:
+  anchors: ignore
